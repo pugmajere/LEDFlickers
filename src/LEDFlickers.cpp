@@ -87,3 +87,5 @@ namespace kaleidoscope {
 }
 
 kaleidoscope::LEDFireFlicker LEDFireFlicker;
+kaleidoscope::LEDRainbowFlicker LEDRainbowFlicker;
+kaleidoscope::LEDColdFlicker LEDColdFlicker;

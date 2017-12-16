@@ -64,3 +64,5 @@ class LEDRainbowFlicker : public LEDMode {
 }
 
 extern kaleidoscope::LEDFireFlicker LEDFireFlicker;
+extern kaleidoscope::LEDRainbowFlicker LEDRainbowFlicker;
+extern kaleidoscope::LEDColdFlicker LEDColdFlicker;
