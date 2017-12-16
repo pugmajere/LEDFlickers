@@ -1,4 +1,4 @@
-#include "LEDFlicker.h"
+#include "LEDFlickers.h"
 
 namespace kaleidoscope {
 
