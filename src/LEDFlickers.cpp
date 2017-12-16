@@ -13,19 +13,6 @@ struct cRGB kFireColors[] = {
 
 static int kNumFireColors = sizeof(kFireColors) / sizeof(cRGB);
 
-sub pick_fire_colors {
-    my ($change_percentage) = @_;
-    $change_percentage /= 5;
-    for (my $i = 0; $i < @$pixels; $i++) {
-        my $pick = rand(100);
-        if ($pick < $change_percentage) {
-            $pixels->[$i] = scale($fcols[int(rand(@fcols))]);
-        }
-    }
-    # Fire wants a fast flickering, over a smaller percentage of leds.
-    return 0.1;
-}
-  
 void LEDFireFlicker::update(void) {
   if (rainbow_current_ticks++ < rainbow_ticks) {
     return;
