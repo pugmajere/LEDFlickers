@@ -44,7 +44,10 @@ namespace kaleidoscope {
     for (uint8_t i = 0; i < LED_COUNT; i++) {
       int choice = random(100);
       if (choice < choice_percentage) {
-        ::LEDControl.setCrgbAt(i, CRGB(int(random(255)), int(random(255)), int(random(255))));
+        uint8_t r = random(255);
+        uint8_t g = random(255);
+        uint8_t b = random(255);
+        ::LEDControl.setCrgbAt(i, CRGB(r, g, b));
       }
     }
   }
