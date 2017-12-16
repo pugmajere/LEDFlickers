@@ -22,7 +22,7 @@ void LEDFireFlicker::update(void) {
   
   for (uint8_t i = 0; i < LED_COUNT; i++) {
     int choice = random(100);
-    if (choice < change_percentage) {
+    if (choice < choice_percentage) {
       ::LEDControl.setCrgbAt(i, kFireColors[last_color++ % kNumFireColors]);
     }
   }
