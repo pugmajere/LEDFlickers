@@ -37,7 +37,7 @@ class LEDColdFlicker : public LEDMode {
   uint8_t choice_percentage = 3;
   uint8_t last_color = 0;
   uint16_t rainbow_current_ticks = 0;
-  uint16_t rainbow_ticks = 10;  //  delays between update
+  uint16_t rainbow_ticks = 100;  //  delays between update
 
   byte rainbow_saturation = 255;
   byte rainbow_value = 50;
@@ -56,7 +56,7 @@ class LEDRainbowFlicker : public LEDMode {
 
   uint8_t choice_percentage = 3;
   uint16_t rainbow_current_ticks = 0;
-  uint16_t rainbow_ticks = 10;  //  delays between update
+  uint16_t rainbow_ticks = 100;  //  delays between update
 
   byte rainbow_saturation = 255;
   byte rainbow_value = 50;
